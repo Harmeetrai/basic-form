@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+
+    <title>Basic Form</title>
 </head>
 <body>
     <div class="relative">
@@ -13,17 +18,27 @@
             <div class="main_title">
                 This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!
                 Sign up now to get started.
-
             </div>
-            <form action="#">
-                <input type="text" name="name" id="name" placeholder="Enter your name">
-                <input type="text" name="email" id="email" placeholder="Enter your email">
-                <input type="text" name="phone" id="phone" placeholder="Enter your phone">
-                <input type="text" name="message" id="message" placeholder="Enter your message">
-                <button type="submit" id="submit">Submit</button>
-            </form>
-        </div>
 
+
+            <div class="body">
+                <div class="head">
+                    Let's do This!
+                </div>
+                    <form action="#">
+                            <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
+                            <input type="text" name="lastname" id="lastname" placeholder="Enter your last name" required>
+                        
+                            <input type="email" name="email" id="email" pattern = "[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" placeholder="Enter your email" required>
+                            <input type="text" name="phone" id="phone" placeholder="Enter your phone" required>
+                        
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                            <input type="password" name="password" id="password" placeholder="Confirm your password">
+                    
+                        <button class="submit" type="submit" id="submit">Submit</button>
+                    </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
