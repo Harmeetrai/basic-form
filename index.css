@@ -13,6 +13,9 @@ div.absolute {
     text-align: center;
 }
 
+div.img-overlay{
+    position: relative;
+}
 .main_title {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -57,4 +60,13 @@ div.body {
 
 button {
     font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    padding-top: 5;
+}
+
+button.submit{
+    font-weight: bolder;
+}
+div.button{
+    padding-top: 5%;
 }
